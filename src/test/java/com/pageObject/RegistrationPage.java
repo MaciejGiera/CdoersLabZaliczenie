@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.sql.Timestamp;
 
-public class registrationPage {
+public class RegistrationPage {
 
     private WebDriver driver;
 
@@ -46,7 +46,7 @@ public class registrationPage {
     @FindBy(id = "register-submit-btn")
     private WebElement registerButton;
 
-    public registrationPage(WebDriver driver) {
+    public RegistrationPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }

@@ -8,7 +8,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import com.pageObject.registrationPage;
+import com.pageObject.RegistrationPage;
 
 public class CodersGuruRegistration {
     WebDriver driver;
@@ -34,11 +34,11 @@ public class CodersGuruRegistration {
         
     }
 
-    @And("^enter valid data \\((.*), (.*), (.*), (.*), (.*), (.*), (.*)\\)$")
+    @And("^user enter valid data \\((.*), (.*), (.*), (.*), (.*), (.*), (.*)\\)$")
     public void enterValidDataFirstNameLastNamePasswordCityPostalCodeStreetHouseNumber(
             String firstName,  String lastName, String password, String city, String postalCode, String street, String houseNumber) {
 
-        registrationPage POBCodersGuru = new registrationPage(driver);
+        RegistrationPage POBCodersGuru = new RegistrationPage(driver);
 
 //        String firstName = "John";
 //        String lastName = "Doe";

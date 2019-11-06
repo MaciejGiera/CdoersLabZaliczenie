@@ -4,7 +4,7 @@ Feature: CodersGuru registration
 
     Given an open browser with https://tester.codersguru.pl/
     When go to registration page
-    And enter valid data (<firstName>, <lastName>, <password>, <city>, <postalCode>, <street>, <houseNumber>)
+    And user enter valid data (<firstName>, <lastName>, <password>, <city>, <postalCode>, <street>, <houseNumber>)
     Then check if registration was successful
 
     Examples:
